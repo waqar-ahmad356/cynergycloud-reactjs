@@ -4,7 +4,7 @@ import signup_img from "../../assets/Gif for synergy 1.png"; // Ensure the corre
 
 const Signup = () => {
   return (
-    <div className="signup-section">
+    <div className="signup-section" id="signup">
       <div className="signup-content">
         {/* Signup Form Section */}
         <div className="signup-form">

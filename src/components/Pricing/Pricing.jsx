@@ -251,7 +251,7 @@ const getCurrencyByCountryCode = (countryCode) => {
   
 
   return (
-    <div className="pricing-section">
+    <div className="pricing-section" id="pricing">
       <div className="pricing-plans">
         <div className="pricing-head">
           <h2>Affordable pricing plans</h2>

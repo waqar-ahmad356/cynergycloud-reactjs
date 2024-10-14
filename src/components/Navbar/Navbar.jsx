@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,16 +19,16 @@ const Navbar = () => {
         <div className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
           <ul className="mb-0">
             <li>
-              <a href="#about">About Us</a>
+              <Link to="about" smooth={true} offset={-100} duration={100}>About Us</Link>
             </li>
             <li>
-              <a href="#pricing">Pricing</a>
+              <Link to="pricing" smooth={true} offset={-30} duration={100}>Pricing</Link>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <Link to="testimonials" smooth={true} offset={-80} duration={100}>Testimonials</Link>
             </li>
             <li>
-              <a href="#contact">Contact Us</a>
+              <Link to="contact" smooth={true} offset={-5} duration={100}>Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -37,9 +38,9 @@ const Navbar = () => {
               <a href="#login">Login</a>
             </li>
             <li className="btn btn-primary">
-              <a href="#signup" className="text-white">
+              <Link to="signup" smooth={true} offset={0} duration={100} className="text-white">
                 Sign Up
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
