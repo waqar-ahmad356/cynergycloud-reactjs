@@ -6,7 +6,7 @@ import Autotyping from "../AutoTyping/Autotyping";
 
 const Hero = () => {
   return (
-    <div className="hero-section">
+    <div className="hero-section" id="hero">
       <div className="hero-content">
         <h2>
           Unlock Seamless  <Autotyping/>  with SynergyCloud:<br/> Where Teams Connect and Ideas

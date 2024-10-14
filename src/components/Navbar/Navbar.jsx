@@ -14,7 +14,7 @@ const Navbar = () => {
     <>
       <nav className="navbar1">
         <div className="logo">
-          <img src={logo} alt="Logo" />
+         <Link to="hero" offset={0} smooth={true} duration={100}><img src={logo} alt="Logo" /></Link> 
         </div>
         <div className={`nav-menu ${isMobileMenuOpen ? "open" : ""}`}>
           <ul className="mb-0">
