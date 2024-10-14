@@ -1,37 +1,46 @@
 import React from "react";
-import "./Contact.css";
-import phone from "../../assets/phone.png";
-import location from "../../assets/location2.png";
-import email from "../../assets/email.png";
+import "./Contact.css"; // Importing the CSS file for styling
+import phone from "../../assets/phone.png"; // Importing phone image
+import location from "../../assets/location2.png"; // Importing location image
+import email from "../../assets/email.png"; // Importing email image
 
+// Contact component definition
 const Contact = () => {
   return (
     <div className="contact-section" id="contact">
       <div className="contact">
+        
+        {/* Contact Us section */}
         <div className="contact-us">
           <div className="contact-head">
-            <h2>Contact Us</h2>
-            <p>Say something to start a live chat!</p>
+            <h2>Contact Us</h2> {/* Section heading */}
+            <p>Say something to start a live chat!</p> {/* Introductory text */}
           </div>
+
+          {/* Contact information items */}
           <div className="contact-info">
             <div className="contact-info-item">
-              <img src={phone} alt="" />
-              <p className="mb-0">+1012 3456 789</p>
+              <img src={phone} alt="" /> {/* Phone icon */}
+              <p className="mb-0">+1012 3456 789</p> {/* Phone number */}
             </div>
             <div className="contact-info-item">
-              <img src={email} alt="" />
-              <p className="mb-0">demo@gmail.com</p>
+              <img src={email} alt="" /> {/* Email icon */}
+              <p className="mb-0">demo@gmail.com</p> {/* Email address */}
             </div>
             <div className="contact-info-item">
-              <img src={location} alt="" />
+              <img src={location} alt="" /> {/* Location icon */}
               <p className="mb-0">
                 132 Dartmouth Street Boston, Massachusetts 02156 United States
-              </p>
+              </p> {/* Physical address */}
             </div>
           </div>
         </div>
+
+        {/* Contact form section */}
         <div class="container contact-container">
           <form class="custom-form">
+            
+            {/* First and Last Name Fields */}
             <div class="row mb-3">
               <div class="col-md-6">
                 <label for="input1" class="form-label">
@@ -57,6 +66,7 @@ const Contact = () => {
               </div>
             </div>
 
+            {/* Email and Phone Number Fields */}
             <div class="row mb-3">
               <div class="col-md-6">
                 <label
@@ -86,6 +96,7 @@ const Contact = () => {
               </div>
             </div>
 
+            {/* Message Text Area */}
             <div class="mb-3">
               <label
                 for="textarea"
@@ -102,7 +113,8 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <div class="btn-container d-flex  justify-content-end">
+            {/* Submit Button */}
+            <div class="btn-container d-flex justify-content-end">
               <button type="submit" class="btn btn-msg">
                 Send Message
               </button>
@@ -114,4 +126,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact; // Exporting the component for use in other parts of the application

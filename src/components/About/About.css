@@ -1,75 +1,77 @@
 .about-section {
-  padding: 94.11px;
+  padding: 94.11px; /* Padding around the about section */
 }
+
 .about {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 94.11px;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Align items vertically at the center */
+  gap: 94.11px; /* Space between image and content */
 }
 
 .about-content {
   display: flex;
-  gap: 37px;
-  flex-direction: column;
+  gap: 37px; /* Space between heading and paragraph */
+  flex-direction: column; /* Arrange content in a column */
 }
+
 .about-img {
-  max-width: 720px;
-  width: 100%;
+  max-width: 720px; /* Maximum width for the image */
+  width: 100%; /* Ensures the image takes full width available */
 }
+
 .about-content h2 {
-  color: var(--Blue-Gray-900, var(--Heading-color, #0f172a));
-  font-family: "DM Sans";
-  font-size: 65.878px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 110%; /* 72.466px */
+  color: var(--Blue-Gray-900, var(--Heading-color, #0f172a)); /* Color of the heading */
+  font-family: "DM Sans"; /* Font family for heading */
+  font-size: 65.878px; /* Font size for heading */
+  font-style: normal; /* Font style for heading */
+  font-weight: 800; /* Bold font weight */
+  line-height: 110%; /* Line height for heading */
 }
+
 .about-content p {
-  color: var(--Blue-Gray-900, var(--Heading-color, #0f172a));
-  font-family: "DM Sans";
-  font-size: 23px;
-  font-style: normal;
-
-  font-weight: 400;
-  line-height: 180%; /* 42.35px */
+  color: var(--Blue-Gray-900, var(--Heading-color, #0f172a)); /* Color of the paragraph */
+  font-family: "DM Sans"; /* Font family for paragraph */
+  font-size: 23px; /* Font size for paragraph */
+  font-style: normal; /* Font style for paragraph */
+  font-weight: 400; /* Normal font weight */
+  line-height: 180%; /* Line height for paragraph */
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
   .about-section {
-    padding-top: 13.49px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-top: 13.49px; /* Reduced padding for smaller screens */
+    padding-left: 16px; /* Padding on left */
+    padding-right: 16px; /* Padding on right */
   }
 
   .about {
-    margin-top: 0px;
-    gap: 16px;
-    flex-direction: column-reverse;
+    margin-top: 0px; /* Remove top margin */
+    gap: 16px; /* Reduce gap between image and content */
+    flex-direction: column-reverse; /* Stack the content with image below on smaller screens */
   }
+
   .about-content {
-    gap: 0px;
+    gap: 0px; /* Remove gap between heading and paragraph */
   }
+
   .about-content h2 {
-    font-size: 24px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 24px; /* Smaller font size for heading on mobile */
+    font-weight: 700; /* Semi-bold font weight */
+    line-height: normal; /* Normal line height */
   }
+
   .about-content p {
-    color: var(--Blue-Gray-900, var(--Heading-color, #0f172a));
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 180%; /* 28.8px */
+    font-size: 16px; /* Smaller font size for paragraph */
+    line-height: 180%; /* Maintain 180% line height */
   }
+
   .about-img img {
     display: flex;
-    width: 262.165px;
-    height: 209.295px;
-    justify-content: center;
-    align-items: center;
+    width: 262.165px; /* Smaller image width for mobile */
+    height: 209.295px; /* Smaller image height for mobile */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
   }
 }

@@ -4,118 +4,115 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space out the three footer sections */
   align-items: stretch; /* Ensures all items have the same height */
   gap: 94px; /* Balanced gap between the sections */
 }
 
 .footer-left {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column; /* Arrange elements vertically */
+  justify-content: space-between; /* Distribute space evenly between items */
+  align-items: flex-start; /* Align items to the start of the flex container */
   gap: 20px; /* Reduced gap for better spacing */
 }
 
 .footer-left-head {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column; /* Arrange the logo and paragraph vertically */
+  align-items: flex-start; /* Align to the start of the flex container */
   gap: 10px; /* Reduced gap for consistency */
 }
 
 .footer-left-head img {
-  width: 265px; /* Slightly reduced width */
-  height: auto;
+  width: 265px; /* Slightly reduced width for the logo */
+  height: auto; /* Auto height to maintain aspect ratio */
 }
 
 .footer-left-head p {
   max-width: 260px; /* Ensures the paragraph doesn't overflow */
-  color: var(--Blue-Gray-900, #0f172a);
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3; /* Improved line height */
+  color: var(--Blue-Gray-900, #0f172a); /* Text color */
+  font-family: "DM Sans"; /* Font style */
+  font-size: 16px; /* Font size */
+  font-weight: 400; /* Regular font weight */
+  line-height: 1.3; /* Improved line height for readability */
 }
 
 .footer-center {
   display: flex;
-  flex-direction: column;
-  gap: 28px; /* Reduced gap */
-  justify-content: flex-start; /* Aligns list items to the start */
-  align-items: flex-start;
+  flex-direction: column; /* Arrange items vertically */
+  gap: 28px; /* Reduced gap between heading and list */
+  justify-content: flex-start; /* Align content to the start */
+  align-items: flex-start; /* Align items to the start */
 }
 
 .footer-center h2 {
-  color: var(--Heading-color, #0f172a);
-  font-family: "DM Sans";
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.2;
+  color: var(--Heading-color, #0f172a); /* Heading text color */
+  font-family: "DM Sans"; /* Font style */
+  font-size: 28px; /* Font size */
+  font-weight: 600; /* Bold font weight */
+  line-height: 1.2; /* Line height */
 }
 
 .footer-center ul {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  gap: 28px; /* Adjusted for smaller spacing */
+  flex-direction: column; /* Arrange list items vertically */
+  justify-content: flex-start; /* Align list to the start */
+  align-items: flex-start; /* Align items to the start */
+  gap: 28px; /* Adjusted gap between list items */
 }
 
 .footer-center ul li {
-  list-style-type: none;
-  color: var(--primary-900, #0a1a17);
-  font-family: "DM Sans";
+  list-style-type: none; /* Remove bullet points from list items */
+  color: var(--primary-900, #0a1a17); /* List item text color */
+  font-family: "DM Sans"; /* Font style */
   font-size: 20px; /* Reduced font size for better layout */
-  font-weight: 400;
-  line-height: 1.2;
+  font-weight: 400; /* Regular font weight */
+  line-height: 1.2; /* Line height */
 }
 
 .footer-right {
   display: flex;
-  max-width: 301px;
-  width: auto;
-
-  flex-direction: column;
-
-  align-items: flex-start;
-  gap: 20px;
+  max-width: 301px; /* Max width for the contact section */
+  width: auto; /* Adjust width automatically */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: flex-start; /* Align items to the start */
+  gap: 20px; /* Space between the elements */
 }
 
 .footer-right h2 {
-  color: var(--Heading-color, #0f172a);
-  font-family: "DM Sans";
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.2;
+  color: var(--Heading-color, #0f172a); /* Heading text color */
+  font-family: "DM Sans"; /* Font style */
+  font-size: 28px; /* Font size */
+  font-weight: 600; /* Bold font weight */
+  line-height: 1.2; /* Line height */
 }
 
 .cont-info {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 18px;
+  flex-direction: column; /* Arrange contact info items vertically */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: flex-start; /* Align items to the start */
+  gap: 18px; /* Spacing between contact info items */
 }
 
 .cont-info div {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  align-items: flex-start; /* Align icon and text at the start */
+  gap: 10px; /* Space between the icon and the text */
 }
 
 .cont-info div img {
-  width: 23px;
-  height: 23px;
+  width: 23px; /* Icon size */
+  height: 23px; /* Icon size */
 }
 
 .cont-info div p {
-  margin-bottom: 0;
-  color: var(--primary-900, #0a1a17);
-  font-family: "DM Sans";
-  font-size: 20px; /* Reduced size for better balance */
-  line-height: 1.2;
+  margin-bottom: 0; /* Remove bottom margin */
+  color: var(--primary-900, #0a1a17); /* Text color */
+  font-family: "DM Sans"; /* Font style */
+  font-size: 20px; /* Font size */
+  line-height: 1.2; /* Line height */
 }
 
 /*---------------------------media Query-----------------------*/
@@ -125,51 +122,51 @@
     padding-left: 28px;
     padding-right: 49px;
     padding-top: 25px;
-    padding-bottom: 27px;
+    padding-bottom: 27px; /* Reduced padding for smaller screens */
   }
   .footer {
-    flex-direction: column;
-    gap: 16px;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 16px; /* Reduce gap for compact layout */
   }
   .footer-left {
-    gap: 16px;
+    gap: 16px; /* Reduced gap between elements */
   }
   .footer-left-head img {
-    width: 266px;
-    height: 55px;
+    width: 266px; /* Adjusted logo size */
+    height: 55px; /* Adjusted logo height */
   }
   .footer-left-head p {
-    font-size: 16px;
+    font-size: 16px; /* Adjusted text size */
   }
   .footer-center {
-    gap: 16px;
+    gap: 16px; /* Reduced gap */
   }
   .footer-center h2 {
-    font-size: 24px;
+    font-size: 24px; /* Adjusted heading size */
   }
   .footer-center ul {
-    gap: 16px;
+    gap: 16px; /* Reduced gap between list items */
   }
   .footer-center ul li {
-    font-size: 16px;
+    font-size: 16px; /* Adjusted font size for list items */
   }
   .footer-right {
-    gap: 16px;
+    gap: 16px; /* Reduced gap between elements */
   }
   .footer-right h2 {
-    font-size: 24px;
+    font-size: 24px; /* Adjusted heading size */
   }
   .cont-info {
-    gap: 16px;
+    gap: 16px; /* Reduced gap for contact info */
   }
   .cont-info div {
-    gap: 16px;
+    gap: 16px; /* Increased space between icon and text */
   }
   .cont-info div img {
-    width: 23px;
-    height: 23px;
+    width: 23px; /* Icon size */
+    height: 23px; /* Icon size */
   }
   .cont-info div p {
-    font-size: 16px;
+    font-size: 16px; /* Adjusted font size for text */
   }
 }

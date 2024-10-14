@@ -1,230 +1,257 @@
+/* Main section styling */
 .contact-section {
-  padding-left: 191px;
-  padding-right: 194px;
-  padding-top: 89px;
-  padding-bottom: 89px;
+  padding-left: 191px; /* Padding on the left side */
+  padding-right: 194px; /* Padding on the right side */
+  padding-top: 89px; /* Padding on the top */
+  padding-bottom: 89px; /* Padding on the bottom */
 }
+
+/* Main contact container */
 .contact {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 38px;
-  padding-top: 12px;
-  padding-bottom: 94px;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0px 0px 70px 35px rgba(0, 0, 0, 0.03);
-  width: auto;
-  height: auto;
-  gap: 35px;
+  display: flex; /* Flexbox layout for alignment */
+  justify-content: flex-start; /* Align items to the start */
+  align-items: center; /* Vertically center items */
+  padding-left: 10px; /* Padding on the left */
+  padding-right: 38px; /* Padding on the right */
+  padding-top: 12px; /* Padding on the top */
+  padding-bottom: 94px; /* Padding on the bottom */
+  border-radius: 12px; /* Rounded corners */
+  background: #fff; /* White background */
+  box-shadow: 0px 0px 70px 35px rgba(0, 0, 0, 0.03); /* Subtle shadow */
+  width: auto; /* Automatic width */
+  height: auto; /* Automatic height */
+  gap: 35px; /* Space between elements */
 }
+
+/* Left contact information box */
 .contact-us {
-  padding: 47px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background: #22739c;
-  gap: 131.34px;
-  width: auto;
-  max-width: 536px;
-  height: 761px;
-  border-radius: 11px;
-  position: relative;
+  padding: 47px; /* Padding inside the box */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Vertical stacking of items */
+  justify-content: flex-start; /* Align items at the top */
+  align-items: flex-start; /* Align items to the left */
+  background: #22739c; /* Background color */
+  gap: 131.34px; /* Space between elements */
+  width: auto; /* Automatic width */
+  max-width: 536px; /* Maximum width */
+  height: 761px; /* Fixed height */
+  border-radius: 11px; /* Rounded corners */
+  position: relative; /* Allows for absolute positioning of ellipses */
 }
+
+/* Larger ellipse decoration (right side) */
 .contact-us::before {
-  content: "";
-  position: absolute; /* Use absolute positioning */
-  bottom: -81px; /* Adjust to partially hide the larger ellipse */
-  right: -81px; /* Adjust to position it off the right edge */
-  z-index: 2; /* Stack order */
-  border-radius: 316px;
-  background: rgba(255, 255, 255, 0.12);
-  width: 216px; /* Size of the larger ellipse */
-  height: 216px; /* Size of the larger ellipse */
+  content: ""; /* Empty content for the decoration */
+  position: absolute; /* Absolute positioning */
+  bottom: -81px; /* Positioned below the bottom */
+  right: -81px; /* Positioned to the right */
+  z-index: 2; /* Lower stacking order */
+  border-radius: 316px; /* Large round shape */
+  background: rgba(255, 255, 255, 0.12); /* Transparent white background */
+  width: 216px; /* Width of the ellipse */
+  height: 216px; /* Height of the ellipse */
 }
 
+/* Smaller ellipse decoration (right side) */
 .contact-us::after {
-  content: "";
-  position: absolute; /* Use absolute positioning */
-  bottom: 70px; /* Position the smaller ellipse above the bottom */
-  right: 50px; /* Position the smaller ellipse to the right */
-  z-index: 3; /* Stack order */
-  border-radius: 316px;
-  background: rgba(255, 255, 255, 0.12);
-  width: 100px; /* Size of the smaller ellipse */
-  height: 100px; /* Size of the smaller ellipse */
+  content: ""; /* Empty content for the decoration */
+  position: absolute; /* Absolute positioning */
+  bottom: 70px; /* Positioned above the bottom */
+  right: 50px; /* Positioned to the right */
+  z-index: 3; /* Higher stacking order */
+  border-radius: 316px; /* Small round shape */
+  background: rgba(255, 255, 255, 0.12); /* Transparent white background */
+  width: 100px; /* Width of the ellipse */
+  height: 100px; /* Height of the ellipse */
 }
 
+/* Contact heading section */
 .contact-head {
-  display: flex;
-  gap: 0.47px;
-  flex-direction: column;
-}
-.contact-head h2 {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 38px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-.contact-head p {
-  color: #c9c9c9;
-  font-family: "DM Sans";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 56px;
-}
-.contact-info-item {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 29px;
-}
-.contact-info-item img {
-  width: 28px;
-  height: 28px;
-}
-.contact-info-item p {
-  color: #fff;
-  font-family: "DM Sans";
-  font-size: 23.528px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  display: flex; /* Flexbox layout */
+  gap: 0.47px; /* Small gap between elements */
+  flex-direction: column; /* Stack heading and subheading vertically */
 }
 
+.contact-head h2 {
+  color: #fff; /* White text color */
+  font-family: "Poppins", sans-serif; /* Custom font */
+  font-size: 38px; /* Font size for heading */
+  font-style: normal; /* Normal font style */
+  font-weight: 600; /* Semi-bold font */
+  line-height: normal; /* Normal line height */
+}
+
+.contact-head p {
+  color: #c9c9c9; /* Lighter text color for subheading */
+  font-family: "DM Sans"; /* Custom font */
+  font-size: 24px; /* Font size for subheading */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Regular font weight */
+  line-height: normal; /* Normal line height */
+}
+
+/* Contact info section (phone, email, location) */
+.contact-info {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Vertical stack */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; /* Align items to the left */
+  gap: 56px; /* Space between contact items */
+}
+
+.contact-info-item {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 29px; /* Space between the icon and text */
+}
+
+/* Contact info icons */
+.contact-info-item img {
+  width: 28px; /* Icon width */
+  height: 28px; /* Icon height */
+}
+
+/* Contact info text */
+.contact-info-item p {
+  color: #fff; /* White text */
+  font-family: "DM Sans"; /* Custom font */
+  font-size: 23.528px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 400; /* Regular font weight */
+  line-height: normal; /* Normal line height */
+}
+
+/* Custom input fields */
 .custom-input {
   border: none; /* Remove all borders */
-  border-bottom: 2px solid #0f172a; /* Only bottom border */
+  border-bottom: 2px solid #0f172a; /* Add a bottom border */
   border-radius: 0; /* Remove border radius */
-  outline: none; /* Remove outline on focus */
-  width: 100%;
-  padding: 10px 5px;
-  font-size: 16px;
-  margin: 20px 0px;
-  font-family: "DM Sans", sans-serif;
+  outline: none; /* No outline when focused */
+  width: 100%; /* Full width */
+  padding: 10px 5px; /* Padding */
+  font-size: 16px; /* Font size */
+  margin: 20px 0px; /* Margin */
+  font-family: "DM Sans", sans-serif; /* Custom font */
   background-color: transparent; /* Transparent background */
 }
-.custom-form label {
-  font-family: "DM Sans", sans-serif;
-  font-size: 28.23px;
-  font-weight: 500;
-  line-height: 23.53px;
-  text-align: left;
-  color: #0f172a;
-}
-.custom-input::placeholder {
-  color: #011c2a;
-  font-family: "DM Sans";
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 23px; /* 100% */
-}
-.text-area {
-  resize: none;
-}
-.custom-form .btn-msg {
-  width: 261.93px;
-  height: 75.06px;
-  padding: 23.53px 28.23px 23.53px 28.23px;
-  background-color: #22739c;
-  border-radius: 58.82px;
-  border: 2.35px solid #22739c;
-  color: var(--White, #fff);
-  font-family: "DM Sans";
-  font-size: 21.175px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-/*------------------media Query---------------------*/
 
+/* Form labels styling */
+.custom-form label {
+  font-family: "DM Sans", sans-serif; /* Custom font */
+  font-size: 28.23px; /* Label font size */
+  font-weight: 500; /* Medium font weight */
+  line-height: 23.53px; /* Line height */
+  text-align: left; /* Left-aligned text */
+  color: #0f172a; /* Dark text color */
+}
+
+/* Placeholder text styling */
+.custom-input::placeholder {
+  color: #011c2a; /* Dark placeholder text color */
+  font-family: "DM Sans"; /* Custom font */
+  font-size: 23px; /* Font size for placeholder */
+  font-style: normal; /* Normal font style */
+  font-weight: 500; /* Medium font weight */
+  line-height: 23px; /* Line height */
+}
+
+/* Textarea with no resizing option */
+.text-area {
+  resize: none; /* Disable resizing */
+}
+
+/* Submit button styling */
+.custom-form .btn-msg {
+  width: 261.93px; /* Button width */
+  height: 75.06px; /* Button height */
+  padding: 23.53px 28.23px; /* Padding inside button */
+  background-color: #22739c; /* Button background color */
+  border-radius: 58.82px; /* Rounded button */
+  border: 2.35px solid #22739c; /* Border matching background */
+  color: var(--White, #fff); /* White text color */
+  font-family: "DM Sans"; /* Custom font */
+  font-size: 21.175px; /* Font size */
+  font-style: normal; /* Normal font style */
+  font-weight: 700; /* Bold font */
+  line-height: normal; /* Normal line height */
+}
+
+/* Media queries for responsive design */
 @media (max-width: 768px) {
   .contact-section {
-    padding: 0px;
+    padding: 0px; /* Remove padding on smaller screens */
   }
+
   .contact {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Center the contact form */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
   }
+
   .contact-us {
-    padding: 16px;
-    gap: 5px;
-    width: 350px;
-    height: auto;
-    margin-left: 25px;
+    padding: 16px; /* Smaller padding on mobile */
+    gap: 5px; /* Reduce space between elements */
+    width: 350px; /* Fixed width for mobile */
+    height: auto; /* Automatic height */
+    margin-left: 25px; /* Add margin to the left */
   }
-  .contact-us::before {
-    display: none;
+
+  .contact-us::before, .contact-us::after {
+    display: none; /* Hide decorative ellipses on mobile */
   }
-  .contact-us::after {
-    display: none;
-  }
+
   .contact-head h2 {
-    font-size: 24px;
+    font-size: 24px; /* Smaller heading on mobile */
   }
+
   .contact-head p {
-    font-size: 16px;
+    font-size: 16px; /* Smaller subheading on mobile */
   }
+
   .contact-info {
-    gap: 9px;
+    gap: 9px; /* Reduce space between info items */
   }
+
   .contact-info-item {
-    gap: 8px;
+    gap: 8px; /* Smaller gap between icon and text */
   }
+
   .contact-info-item img {
-    width: 19px;
-    height: 21px;
+    width: 19px; /* Smaller icon size */
+    height: 21px; /* Smaller icon size */
   }
+
   .contact-info-item p {
-    font-size: 16px;
+    font-size: 16px; /* Smaller text size */
   }
 
   .custom-form label {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 23.53px;
-    text-align: left;
+    font-size: 20px; /* Smaller label text */
   }
+
   .row {
-    margin-bottom: 0px;
+    margin-bottom: 0px; /* Remove bottom margin */
   }
+
   .custom-input {
-    padding: 0px;
-    margin: 5px 0px;
-    max-width: 100%;
+    padding: 0px; /* Remove padding */
+    margin: 5px 0px; /* Smaller margin */
+    max-width: 100%; /* Full width on mobile */
   }
 
-  .custom-form label {
-    font-size: 20px;
-  }
   .custom-input::placeholder {
-    font-size: 16px;
+    font-size: 16px; /* Smaller placeholder text */
   }
-  .btn-container .btn-msg {
-    width: 148px;
-    height: 33px;
-    padding: 6px 16px 6px 16px;
 
-    border-radius: 58.82px;
-    border: 2.35px solid #0b608b;
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20.83px;
+  .btn-container .btn-msg {
+    width: 148px; /* Smaller button width */
+    height: 33px; /* Smaller button height */
+    padding: 6px 16px; /* Smaller padding */
+    border-radius: 58.82px; /* Keep rounded corners */
+    border: 2.35px solid #0b608b; /* Adjust border color */
+    font-size: 16px; /* Smaller button text */
+    font-weight: 500; /* Regular font weight */
+    line-height: 20.83px; /* Line height */
   }
 }

@@ -1,21 +1,19 @@
 .auto-typing-container {
-    display: inline-block; /* Allow the width to fit the content */
-    min-width: none; /* Set a minimum width */
-    
-   
-    white-space: nowrap; /* Prevent text from wrapping */
-    color: #1E719B;;
-  text-align: center;
-  font-family: "DM Sans", sans-serif;
-  font-size: 56.467px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    display: inline-block; /* Ensures the width of the container fits the content */
+    min-width: none; /* No minimum width specified */
+    white-space: nowrap; /* Prevents the text from wrapping onto the next line */
+    color: #1E719B; /* Text color */
+    text-align: center; /* Centers the text */
+    font-family: "DM Sans", sans-serif; /* Font family for the text */
+    font-size: 56.467px; /* Font size */
+    font-style: normal; /* Normal font style */
+    font-weight: 700; /* Bold font weight */
+    line-height: normal; /* Normal line height */
 }
-@media (max-width:768px) {
-    .auto-typing-container{
-        font-size: 24px;
-        min-width: none;
+
+@media (max-width: 768px) {
+    .auto-typing-container {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+        min-width: none; /* Ensures no minimum width on smaller screens */
     }
-    
 }
