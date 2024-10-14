@@ -112,10 +112,11 @@ const Pricing = () => {
   // Fetch user's location to determine the currency
   const fetchUserLocation = async () => {
     try {
-      const res = await fetch("https://ipapi.co/json/");
+      const apiKey = "478fe52c3fc9487fb0049aa136d319dc"; // Your API key for ipgeolocation.io
+      const res = await fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${apiKey}`);
       const data = await res.json();
-      const countryCode = data.country_code; // Get user's country code (e.g., "US")
-      const userCurrency = getCurrencyByCountryCode(countryCode) || "USD"; // Map country code to currency code
+      const countryCode = data.country_code2; // Get user's country code (e.g., "US")
+      const userCurrency = getCurrencyByCountryCode(countryCode) || countryCode; // Map country code to currency code
       console.log(userCurrency)
       setSelectedCurrency(userCurrency);
     } catch (error) {
