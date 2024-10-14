@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo from "../../assets/logo.png";
 import linkedin from "../../assets/linkedin.png";
 import phone from "../../assets/phone2.png";
-import location from "../../assets/location.png";
+import location from "../../assets/Location.png";
 import info from "../../assets/info.png";
 
 const Footer = () => {
