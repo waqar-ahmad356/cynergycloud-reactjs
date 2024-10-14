@@ -57,25 +57,40 @@
 }
 
 /* Adjust for smaller screens */
+/* Adjust for smaller screens */
 @media (max-width: 768px) {
   .swiper-slide {
-    width: calc(100% - 40px); /* Full width minus padding */
-    margin: 0 10px; /* Margin for the card */
+    width: calc(60% - 20px); /* Center slide will take 60% of the width */
+    margin: 0 10px; /* Spacing between slides */
+  }
+
+  .testimonial-card {
+    background: #eeeeee;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+    max-width: 300px;
+    font-size: 12px;
   }
 
   /* Center the active card */
   .swiper {
-    padding: 0px; /* Remove side padding for full width */
+    padding: 0 40px; /* Add side padding for the partial slides */
   }
 
   .swiper-slide-active {
-    transform: scale(1.05); /* Scale up the active slide */
+    transform: scale(1.05); /* Slightly scale up the active slide */
   }
 
   /* Adjust for partially visible slides */
-  .swiper-slide:first-child,
-  .swiper-slide:nth-child(3) {
-    margin-left: -30%; /* Move left for partial visibility */
-    width: calc(60% - 40px); /* Adjust width to show partially */
+  .swiper-slide:first-child {
+    margin-left: -15%; /* Show part of the first slide */
+  }
+  
+  .swiper-slide:last-child {
+    margin-right: -15%; /* Show part of the last slide */
   }
 }
+

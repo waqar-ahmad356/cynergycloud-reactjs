@@ -11,7 +11,7 @@ const Testimonials = () => {
   return (
     <div className="testimonial-container">
       <Swiper
-        spaceBetween={26}
+        spaceBetween={22}
         slidesPerView={5} // Show 5 slides on larger screens
         centeredSlides={true} // Center the active slide
         autoplay={{
