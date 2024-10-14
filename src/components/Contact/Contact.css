@@ -1,0 +1,230 @@
+.contact-section {
+  padding-left: 191px;
+  padding-right: 194px;
+  padding-top: 89px;
+  padding-bottom: 89px;
+}
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 38px;
+  padding-top: 12px;
+  padding-bottom: 94px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 0px 70px 35px rgba(0, 0, 0, 0.03);
+  width: auto;
+  height: auto;
+  gap: 35px;
+}
+.contact-us {
+  padding: 47px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #22739c;
+  gap: 131.34px;
+  width: auto;
+  max-width: 536px;
+  height: 761px;
+  border-radius: 11px;
+  position: relative;
+}
+.contact-us::before {
+  content: "";
+  position: absolute; /* Use absolute positioning */
+  bottom: -81px; /* Adjust to partially hide the larger ellipse */
+  right: -81px; /* Adjust to position it off the right edge */
+  z-index: 2; /* Stack order */
+  border-radius: 316px;
+  background: rgba(255, 255, 255, 0.12);
+  width: 216px; /* Size of the larger ellipse */
+  height: 216px; /* Size of the larger ellipse */
+}
+
+.contact-us::after {
+  content: "";
+  position: absolute; /* Use absolute positioning */
+  bottom: 70px; /* Position the smaller ellipse above the bottom */
+  right: 50px; /* Position the smaller ellipse to the right */
+  z-index: 3; /* Stack order */
+  border-radius: 316px;
+  background: rgba(255, 255, 255, 0.12);
+  width: 100px; /* Size of the smaller ellipse */
+  height: 100px; /* Size of the smaller ellipse */
+}
+
+.contact-head {
+  display: flex;
+  gap: 0.47px;
+  flex-direction: column;
+}
+.contact-head h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.contact-head p {
+  color: #c9c9c9;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 56px;
+}
+.contact-info-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 29px;
+}
+.contact-info-item img {
+  width: 28px;
+  height: 28px;
+}
+.contact-info-item p {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 23.528px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-input {
+  border: none; /* Remove all borders */
+  border-bottom: 2px solid #0f172a; /* Only bottom border */
+  border-radius: 0; /* Remove border radius */
+  outline: none; /* Remove outline on focus */
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  margin: 20px 0px;
+  font-family: "DM Sans", sans-serif;
+  background-color: transparent; /* Transparent background */
+}
+.custom-form label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 28.23px;
+  font-weight: 500;
+  line-height: 23.53px;
+  text-align: left;
+  color: #0f172a;
+}
+.custom-input::placeholder {
+  color: #011c2a;
+  font-family: "DM Sans";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; /* 100% */
+}
+.text-area {
+  resize: none;
+}
+.custom-form .btn-msg {
+  width: 261.93px;
+  height: 75.06px;
+  padding: 23.53px 28.23px 23.53px 28.23px;
+  background-color: #22739c;
+  border-radius: 58.82px;
+  border: 2.35px solid #22739c;
+  color: var(--White, #fff);
+  font-family: "DM Sans";
+  font-size: 21.175px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/*------------------media Query---------------------*/
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 0px;
+  }
+  .contact {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us {
+    padding: 16px;
+    gap: 5px;
+    width: 350px;
+    height: auto;
+    margin-left: 25px;
+  }
+  .contact-us::before {
+    display: none;
+  }
+  .contact-us::after {
+    display: none;
+  }
+  .contact-head h2 {
+    font-size: 24px;
+  }
+  .contact-head p {
+    font-size: 16px;
+  }
+  .contact-info {
+    gap: 9px;
+  }
+  .contact-info-item {
+    gap: 8px;
+  }
+  .contact-info-item img {
+    width: 19px;
+    height: 21px;
+  }
+  .contact-info-item p {
+    font-size: 16px;
+  }
+
+  .custom-form label {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.53px;
+    text-align: left;
+  }
+  .row {
+    margin-bottom: 0px;
+  }
+  .custom-input {
+    padding: 0px;
+    margin: 5px 0px;
+    max-width: 100%;
+  }
+
+  .custom-form label {
+    font-size: 20px;
+  }
+  .custom-input::placeholder {
+    font-size: 16px;
+  }
+  .btn-container .btn-msg {
+    width: 148px;
+    height: 33px;
+    padding: 6px 16px 6px 16px;
+
+    border-radius: 58.82px;
+    border: 2.35px solid #0b608b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.83px;
+  }
+}

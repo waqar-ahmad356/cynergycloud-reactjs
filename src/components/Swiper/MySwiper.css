@@ -1,0 +1,81 @@
+.testimonial-container {
+  background-color: white;
+  padding: 0px;
+
+  overflow: visible;
+}
+
+.swiper {
+  padding: 0 20px; /* Padding on the sides for partial visibility */
+}
+
+.swiper-slide {
+  width: calc(20% - 20px); /* Ensure partial visibility for 5 slides */
+}
+
+.card-image {
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.testimonial-card {
+  background: #eeeeee;
+  border-radius: 10px;
+  padding: 26px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  transition: transform 0.3s; /* Smooth transition */
+  max-width: 395px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.card-content {
+  margin: 0px;
+  margin-bottom: 20px;
+  color: #413d45;
+  font-family: "DM Sans";
+  font-size: 27.528px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px; /* 138.462% */
+  letter-spacing: -0.741px;
+  text-align: left;
+}
+
+.card-author p {
+  margin: 0; /* Remove default margin */
+  color: #413d45;
+  font-family: "DM Sans";
+  font-size: 11.646px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.94px; /* 145.455% */
+  letter-spacing: -0.127px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: calc(100% - 40px); /* Full width minus padding */
+    margin: 0 10px; /* Margin for the card */
+  }
+
+  /* Center the active card */
+  .swiper {
+    padding: 0px; /* Remove side padding for full width */
+  }
+
+  .swiper-slide-active {
+    transform: scale(1.05); /* Scale up the active slide */
+  }
+
+  /* Adjust for partially visible slides */
+  .swiper-slide:first-child,
+  .swiper-slide:nth-child(3) {
+    margin-left: -30%; /* Move left for partial visibility */
+    width: calc(60% - 40px); /* Adjust width to show partially */
+  }
+}

@@ -1,0 +1,34 @@
+.testimonials {
+  padding: 65px 0px;
+}
+.testimonials h2 {
+  color: var(--Heading-color, #0f172a);
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 56.467px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84.7px; /* 150% */
+}
+.testimonials p {
+  color: var(--Neutral-600, #6f6c90);
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "DM Sans";
+  font-size: 21.175px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35.292px; /* 166.667% */
+}
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 10px 0px;
+  }
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+  }
+  .testimonials p {
+    font-size: 16px;
+  }
+}

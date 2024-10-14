@@ -1,0 +1,21 @@
+.auto-typing-container {
+    display: inline-block; /* Allow the width to fit the content */
+    min-width: none; /* Set a minimum width */
+    
+   
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: #1E719B;;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-size: 56.467px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media (max-width:768px) {
+    .auto-typing-container{
+        font-size: 24px;
+        min-width: none;
+    }
+    
+}
