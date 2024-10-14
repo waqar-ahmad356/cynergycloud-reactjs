@@ -87,9 +87,10 @@ const Pricing = () => {
   // Fetch available currencies
   const fetchCurrencies = async () => {
     try {
-      const res = await fetch("https://api.frankfurter.app/currencies");
+      const api_key="6ec1f09c44cdd1fbb203274c67475489";
+      const res = await fetch(`http://api.currencylayer.com/list?access_key=${api_key}`);
       const data = await res.json();
-      setCurrencies(data); // Extract only currency codes (like USD, INR)
+      setCurrencies(data.currencies); // Extract only currency codes (like USD, INR)
     } catch (error) {
       console.log(error);
     }
@@ -98,9 +99,10 @@ const Pricing = () => {
   // Fetch exchange rate and convert price
   const fetchExchangeRate = async (currency) => {
     try {
-      const res = await fetch(`https://api.frankfurter.app/latest?amount=1&from=USD&to=${currency}`);
+      const apikey="Zm84WOoRBmUglB0ucbMeOA1sPZLPbiVw"
+      const res = await fetch(`https://api.currencybeacon.com/v1/convert?from=USD&to=${currency}&amount=1&api_key=${apikey}`);
       const data = await res.json();
-      const rate = data.rates[currency];
+      const rate = data.response.value;
       setExchangeRate(rate);
     } catch (error) {
       console.log(error);
@@ -114,6 +116,7 @@ const Pricing = () => {
       const data = await res.json();
       const countryCode = data.country_code; // Get user's country code (e.g., "US")
       const userCurrency = getCurrencyByCountryCode(countryCode) || "USD"; // Map country code to currency code
+      console.log(userCurrency)
       setSelectedCurrency(userCurrency);
     } catch (error) {
       console.log("Error fetching user location", error);
